@@ -1,0 +1,14 @@
+def slovo(p,ind):
+    sp = list(p)     
+    spin = list(ind) 
+    b=[]
+    m=0
+    for h, n in enumerate(spin):
+        spin[h] = int(n)   
+    for i in range(len(spin)):
+        a=spin.index(m)
+        b.append(sp[a])
+        m+=1
+        i+=1
+    b=''.join(b)  
+    return(b)
